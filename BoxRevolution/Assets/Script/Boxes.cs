@@ -12,7 +12,7 @@ public class Boxes : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Instantiate(box,teto.position,teto.rotation);
+        Instantiate(box, new Vector3(0, 15, 0), teto.rotation);
     }
 
     
