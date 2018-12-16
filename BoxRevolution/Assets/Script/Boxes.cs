@@ -1,23 +1,24 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
 
-public class Boxes : MonoBehaviour {
+public class Boxes : MonoBehaviour
+{
     public GameObject box;
     public Transform teto;
-
-    
+    public float spawnTime = 1f;
+    System.Random random = new System.Random();
 
     // Use this for initialization
-    void Start () {
-        Instantiate(box, new Vector3(0, 15, 0), teto.rotation);
+    void Start()
+    {
+        InvokeRepeating("Spawn", spawnTime, spawnTime);
     }
 
-    
     // Update is called once per frame
-    void Update () {
-        
+    void Spawn()
+    {
+        int x = random.Next(-7, 7);
+        int z = random.Next(-7, 7);
+        Instantiate(box, new Vector3(x, 15, z), teto.rotation);
     }
 }
