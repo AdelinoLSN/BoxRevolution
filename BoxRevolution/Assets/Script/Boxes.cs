@@ -18,7 +18,6 @@ public class Boxes : MonoBehaviour
         first = 0f;
         delay = Settings.TempoCaixas * 2f;
         InvokeRepeating("Spawn", first, delay);
-
     }
 
     void Spawn()
