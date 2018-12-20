@@ -42,7 +42,9 @@ public class Boxes : MonoBehaviour
 
     void Box2()
     {
-        Instantiate(box, new Vector3(alvo.transform.position.x, 15, alvo.transform.position.z), teto.rotation);
+        int alvo_x = (int) alvo.transform.position.x;
+        int alvo_z = (int) alvo.transform.position.z;
+        Instantiate(box, new Vector3(alvo_x, 15, alvo_z), teto.rotation);
     }
 
 
