@@ -9,10 +9,15 @@ public class Boxes : MonoBehaviour
     public Transform teto;
     System.Random random = new System.Random();
 
+    private float first;
+    private float delay;
+
     // Use this for initialization
     void Start()
     {
-        InvokeRepeating("Spawn", 2f, 20f);
+        first = 0f;
+        delay = Settings.TempoCaixas * 2f;
+        InvokeRepeating("Spawn", first, delay);
 
     }
 

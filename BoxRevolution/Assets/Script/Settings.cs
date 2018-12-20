@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class Settings
 {
-    private static int tempoEntreCaixas = 10;
+    private static int tempoEntreCaixas = 5;
 
     public static int TempoCaixas
     {
