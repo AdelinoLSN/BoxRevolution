@@ -24,7 +24,7 @@ public class Boxes : MonoBehaviour
     IEnumerator CreateBoxes()
     {
         Box1();
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(Settings.TempoCaixas);
         Box2();
     }
 

@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour {
 
     public Text counterText;
 
-    public float tempo_da_caixa = 10;
+    public float tempo_da_caixa = Settings.TempoCaixas;
 
     public float seconds;
 
