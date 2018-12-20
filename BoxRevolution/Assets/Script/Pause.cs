@@ -39,4 +39,10 @@ public class Pause : MonoBehaviour {
         SceneManager.LoadScene("Menu");
     }
 
+    public void Restart()
+    {
+        SceneManager.UnloadSceneAsync("Nivel1");
+        SceneManager.LoadScene("Nivel1");
+    }
+
 }
